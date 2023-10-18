@@ -1,0 +1,125 @@
+* {
+	margin: 0;
+	padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    overflow: hidden;
+    display: flex;
+}
+#text-container {
+    width: 50vw;
+    height: 100vh;
+    overflow-y: scroll;
+    padding: 80px;
+    padding-bottom: 50vh;
+}
+button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    font: inherit;
+    appearance: none;
+    font-weight: lighter;
+    font-size: inherit
+}
+.model-button{
+    display: block;
+    pointer-events: all;
+    color: black;
+    border: none;
+    background-color: rgba(255, 255, 255, 0);
+    padding: 2px 4px;
+    transition-property: color, border-color;
+    transition-duration: .2s;
+    transition-timing-function: ease-in-out;
+}
+.model-button:hover {
+    cursor: pointer;
+    color: red;
+    border-color: red;
+}
+.model-button-active {
+    color: blue;
+    font-weight: bold;
+}
+#three-canvas {
+    width: 50vw;
+    height: 100vh;
+    outline: none;
+}
+#loader-container {
+    z-index: 500;
+    position: fixed;
+    width: 50vw;
+    margin-left: 50vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-style: italic;
+    font-weight: bold;
+    background-color : rgba(255, 255, 255, 0.7);
+    color: hsl(214, 97%, 59%);
+}
+/* From uiverse.io by @barisdogansutcu */
+#loader-svg {
+    margin: 1rem;
+    width: 3.25em;
+    transform-origin: center;
+    animation: rotate4 2s linear infinite;
+   }
+   circle {
+    fill: none;
+    stroke: hsl(214, 97%, 59%);
+    stroke-width: 2;
+    stroke-dasharray: 1, 200;
+    stroke-dashoffset: 0;
+    stroke-linecap: round;
+    animation: dash4 1.5s ease-in-out infinite;
+   }
+   
+   @keyframes rotate4 {
+    100% {
+     transform: rotate(360deg);
+    }
+   }
+   
+   @keyframes dash4 {
+    0% {
+     stroke-dasharray: 1, 200;
+     stroke-dashoffset: 0;
+    }
+   
+    50% {
+     stroke-dasharray: 90, 200;
+     stroke-dashoffset: -35px;
+    }
+   
+    100% {
+     stroke-dashoffset: -125px;
+    }
+   }
+#aside-left {
+    z-index: 100;
+    padding: 48px;
+    margin-top: 5.5rem;
+    margin-left: 50vw;
+    padding-top: 5.5rem;
+    padding: 48px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+#title-aside-left {
+    margin-bottom: 5px;
+}
+.section {
+    font-size: 20px;
+    margin-top: 40px;
+    margin-bottom: 20px
+}

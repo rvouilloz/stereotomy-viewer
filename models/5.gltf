@@ -1,0 +1,122 @@
+{
+  "accessors": [
+    {
+      "bufferView": 0,
+      "componentType": 5126,
+      "count": 724,
+      "type": "VEC3",
+      "max": [
+        0.483838081,
+        0.1940173,
+        0.730238438
+      ],
+      "min": [
+        0.160777,
+        -0.387496918,
+        0.143376321
+      ]
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 8688,
+      "componentType": 5126,
+      "count": 724,
+      "type": "VEC3",
+      "max": [
+        1.0,
+        0.811498165,
+        1.0
+      ],
+      "min": [
+        -0.982184947,
+        -0.982184947,
+        -1.0
+      ]
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5125,
+      "count": 2940,
+      "type": "SCALAR",
+      "max": [
+        723.0
+      ],
+      "min": [
+        0.0
+      ]
+    }
+  ],
+  "asset": {
+    "generator": "TOPSOLID 7.17.400.127",
+    "version": "2.0"
+  },
+  "buffers": [
+    {
+      "uri": "5.bin",
+      "byteLength": 29136
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 17376,
+      "byteStride": 12,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 17376,
+      "byteLength": 11760,
+      "target": 34963
+    }
+  ],
+  "materials": [
+    {
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          1.0,
+          0.5019608,
+          0.5019608,
+          0.5
+        ],
+        "metallicFactor": 0.0
+      },
+      "alphaMode": "BLEND",
+      "doubleSided": true
+    }
+  ],
+  "meshes": [
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1
+          },
+          "indices": 2,
+          "material": 0
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "children": [
+        1
+      ],
+      "name": "5"
+    },
+    {
+      "mesh": 0,
+      "name": "Bloc = Etape 5"
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "nodes": [
+        0
+      ]
+    }
+  ]
+}
