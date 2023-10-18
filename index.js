@@ -87,9 +87,7 @@ for (let model of models) {
           },
           function (progress) {
             loadingElem.style.display = "flex";
-            const current = (progress.loaded / progress.total) * 100;
-            const formatted = Math.trunc(current * 100) / 100;
-            loadingText.textContent = `Chargement: ${formatted}%`;
+            loadingText.textContent = `Chargement...`;
           }
         );
       }
